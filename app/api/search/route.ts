@@ -19,7 +19,6 @@ function buildQuery(q: string, stores: string[]) {
   return `${terms} ${saleSynonyms} (${sites})`;
 }
 
-
 export async function POST(req) {
   try {
     const { q, stores } = await req.json();
