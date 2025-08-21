@@ -10,7 +10,7 @@ const DEFAULT_STORES = [
   'costco.ca'
 ];
 
-function buildQuery(q, stores) {
+function buildQuery(q: string, stores: string[]) {
   const terms = q.trim();
   const saleSynonyms = '(sale OR clearance OR deal OR "save $" OR discount OR promo)';
   const sites = (stores.length ? stores : DEFAULT_STORES)
